@@ -1,0 +1,765 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7f6;
+    color: #26352e;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header {
+    height: 76px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e9e7;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 42px;
+
+    gap: 35px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 215px;
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    background: #e8f5e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.brand h2 {
+    font-size: 21px;
+
+    color: #176b3a;
+}
+
+.brand span {
+    display: block;
+
+    font-size: 11px;
+
+    color: #8a9690;
+
+    margin-top: 3px;
+}
+
+
+/* NAV */
+
+.top-navigation {
+    display: flex;
+
+    gap: 6px;
+
+    flex: 1;
+}
+
+.nav-link {
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    color: #68756f;
+
+    font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #eaf5ee;
+
+    color: #176b3a;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+
+/* PROFILE */
+
+.profile-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.profile-avatar {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 50%;
+
+    background: #176b3a;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 105px;
+}
+
+.profile-text strong {
+    font-size: 13px;
+}
+
+.profile-text span {
+    font-size: 11px;
+
+    color: #8a9690;
+}
+
+.logout-button {
+    padding: 8px 13px;
+
+    border: 1px solid #e1e7e3;
+
+    border-radius: 7px;
+
+    color: #66736d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.logout-button:hover {
+    background: #fff4f4;
+
+    color: #c0392b;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-container {
+    width: min(1200px, calc(100% - 70px));
+
+    margin: auto;
+
+    padding: 40px 0 60px;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #5f8d71;
+
+    letter-spacing: 1.3px;
+
+    margin-bottom: 8px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+.page-description {
+    color: #7a8781;
+
+    font-size: 14px;
+}
+
+.back-button {
+    padding: 11px 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe6e2;
+
+    border-radius: 8px;
+
+    color: #176b3a;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.back-button:hover {
+    background: #edf7f0;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: #ffffff;
+
+    border: 1px solid #e4ebe7;
+
+    border-radius: 12px;
+
+    padding: 20px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 3px 12px rgba(30, 60, 45, 0.04);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 11px;
+
+    background: #eaf7ef;
+
+    color: #237744;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+.stat-icon.money {
+    background: #fff7e5;
+
+    color: #a36d00;
+}
+
+.stat-card div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.stat-card span {
+    color: #7b8781;
+
+    font-size: 12px;
+}
+
+.stat-card strong {
+    color: #176b3a;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   HISTORY CARD
+========================================================= */
+
+.history-card {
+    background: #ffffff;
+
+    border: 1px solid #e4ebe7;
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(30, 60, 45, 0.04);
+}
+
+.history-header {
+    padding: 22px;
+
+    border-bottom: 1px solid #edf1ef;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.history-header h2 {
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.history-header p {
+    color: #8a9690;
+
+    font-size: 12px;
+}
+
+.count-badge {
+    padding: 7px 11px;
+
+    background: #eaf5ee;
+
+    color: #176b3a;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+thead {
+    background: #fafcfb;
+}
+
+th {
+    padding: 13px 18px;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    color: #98a39d;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+
+    border-bottom: 1px solid #edf1ef;
+
+    white-space: nowrap;
+}
+
+td {
+    padding: 17px 18px;
+
+    border-bottom: 1px solid #f0f3f1;
+
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #fbfdfc;
+}
+
+
+/* ORDER */
+
+.order-id {
+    color: #176b3a;
+
+    font-size: 13px;
+}
+
+
+/* CUSTOMER */
+
+.customer-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.customer-avatar {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #e8f5ec;
+
+    color: #176b3a;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.customer-info strong {
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+}
+
+.customer-info span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #89948e;
+}
+
+
+/* ADDRESS */
+
+.address {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    max-width: 230px;
+}
+
+.address span {
+    flex-shrink: 0;
+}
+
+.address p {
+    color: #66736d;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* AMOUNT */
+
+.amount {
+    color: #176b3a;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* DATE */
+
+.date-info {
+    color: #596760;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.date-info span {
+    display: block;
+
+    color: #98a39d;
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}
+
+
+/* STATUS */
+
+.status {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 6px 9px;
+
+    background: #eaf7ef;
+
+    color: #237744;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #2e8b57;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.empty-state {
+    background: #ffffff;
+
+    border: 1px solid #e4ebe7;
+
+    border-radius: 13px;
+
+    padding: 65px 30px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 12px rgba(30, 60, 45, 0.04);
+}
+
+.empty-icon {
+    width: 62px;
+    height: 62px;
+
+    margin: 0 auto 17px;
+
+    border-radius: 50%;
+
+    background: #eaf7ef;
+
+    color: #25804a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    font-weight: 700;
+}
+
+.empty-state h2 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: #89948e;
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+.primary-button {
+    display: inline-block;
+
+    padding: 10px 17px;
+
+    background: #176b3a;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.primary-button:hover {
+    background: #125a30;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    border-top: 1px solid #e4ebe7;
+
+    background: #ffffff;
+
+    padding: 20px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #9aa49f;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-header {
+        padding: 0 20px;
+
+        gap: 15px;
+    }
+
+    .brand {
+        min-width: auto;
+    }
+
+    .brand span {
+        display: none;
+    }
+
+    .profile-text {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .top-header {
+        height: auto;
+
+        padding: 14px;
+
+        flex-wrap: wrap;
+    }
+
+    .top-navigation {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+    }
+
+    .main-container {
+        width: calc(100% - 30px);
+
+        padding-top: 25px;
+    }
+
+    .page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .history-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+
+        gap: 7px;
+
+        padding: 18px;
+    }
+}
