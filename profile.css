@@ -1,0 +1,121 @@
+/* =========================================================
+   PROFILE EDIT FORM
+========================================================= */
+
+.message {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.success-message {
+    background: #e7f7ed;
+    color: #176b3a;
+    border: 1px solid #b9e5c9;
+}
+
+.error-message {
+    background: #fdecec;
+    color: #a52828;
+    border: 1px solid #f2c1c1;
+}
+
+.edit-card {
+    padding-bottom: 28px;
+}
+
+.profile-form {
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #244936;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d5e2d9;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #183b2a;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #23814b;
+
+    box-shadow:
+        0 0 0 3px rgba(35, 129, 75, 0.10);
+}
+
+.form-group input:disabled {
+    background: #f1f5f2;
+    color: #7a8b80;
+    cursor: not-allowed;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #7a8b80;
+
+    font-size: 11px;
+}
+
+.save-btn {
+    width: 100%;
+
+    padding: 13px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #0f5b32;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.save-btn:hover {
+    background: #0b4727;
+    transform: translateY(-1px);
+}
