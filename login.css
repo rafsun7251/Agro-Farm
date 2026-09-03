@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f0;
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f2;
+    color: #333;
+}
+.navbar {
+    background-color: #14532d;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #facc15;
+}
+.nav-buttons a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+h1 {
+    color: green;
+    margin-top: 50px;
+}
+
+.login-form {
+    background-color: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 30px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.login-form h2 {
+    color: green;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="checkbox"] {
+    width: auto;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form a {
+    color: green;
+    text-decoration: none;
+}

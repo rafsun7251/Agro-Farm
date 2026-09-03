@@ -1,0 +1,65 @@
+navbar {
+    background-color: #14532d;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #facc15;
+}
+.nav-buttons a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+.login-btn {
+    color: white;
+    border: 1px solid white;
+}
+.register-btn {
+    background-color: #facc15;
+    color: #14532d;
+}
+.about {
+    text-align: center;
+    padding: 60px 100px;
+}
+.about h1 {
+    color: green;
+    font-size: 35px;
+}
+.about p {
+    color: #555;
+    line-height: 1.6;
+}
+.about h2 {
+    margin-top: 40px;
+}
+.about-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+.about-box div {
+    background-color: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 8px;
+}
+.about-box h3 {
+    color: green;
+}

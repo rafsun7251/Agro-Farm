@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+    background-color: #f1f8f1;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+    margin-top: 40px;
+}
+
+.Register-form {
+    background-color: white;
+
+    width: 350px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+.Register-form h2 {
+    color: green;
+}
+
+.Register-form label {
+    display: block;
+    text-align: left;
+
+    margin-top: 15px;
+}
+
+.Register-form input {
+    width: 100%;
+    padding: 10px;
+
+    margin-top: 5px;
+
+    box-sizing: border-box;
+}
+
+.Register-form button {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 20px;
+
+    background-color: green;
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.Register-form button:hover {
+    background-color: darkgreen;
+}
